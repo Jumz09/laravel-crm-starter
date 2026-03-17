@@ -40,7 +40,7 @@
                               'name' => 'sub_total',
                                'label' => ucfirst(__('laravel-crm::lang.sub_total')),
                                'type' => 'number',
-                               'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+                               'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
                                'attributes' => [
                                    'wire:model' => 'sub_total',
                                    'step' => .01,
@@ -60,7 +60,7 @@
                       'name' => 'tax',
                       'label' => ucfirst(__('laravel-crm::lang.tax')),
                        'type' => 'number',
-                       'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+                       'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
                        'attributes' => [
                            'wire:model' => 'tax',
                            'step' => .01,
@@ -79,7 +79,7 @@
                   'name' => 'total',
                   'label' => ucfirst(__('laravel-crm::lang.total')),
                    'type' => 'number',
-                    'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+                    'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
                    'attributes' => [
                        'wire:model' => 'total',
                        'step' => .01,

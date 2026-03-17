@@ -66,7 +66,7 @@
                   'name' => 'invoiceLines['.$value.'][price]',
                    'label' => ucfirst(__('laravel-crm::lang.price')),
                    'type' => 'number',
-                   'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+                   'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
                    'attributes' => [
                        'wire:model' => 'price.'.$value,
                        'wire:change' => 'calculateAmounts',
@@ -79,7 +79,7 @@
               'name' => 'invoiceLines['.$value.'][price]',
                'label' => ucfirst(__('laravel-crm::lang.price')),
                'type' => 'number',
-               'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+               'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
                'attributes' => [
                    'wire:model' => 'price.'.$value,
                    'wire:change' => 'calculateAmounts',
@@ -118,7 +118,7 @@
          'name' => 'invoiceLines['.$value.'][tax_amount]',
           'label' => $taxName . ' (' . $tax_rate[$value] . '%)',
           'type' => 'number',
-          'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+          'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
           'attributes' => [
               'wire:model' => 'tax_amount.'.$value,
               'step' => .01,
@@ -131,7 +131,7 @@
          'name' => 'invoiceLines['.$value.'][amount]',
           'label' => ucfirst(__('laravel-crm::lang.amount')),
           'type' => 'number',
-          'prepend' => '<span class="fa fa-dollar" aria-hidden="true"></span>',
+          'prepend' => '<span class="fw-bold" aria-hidden="true">K</span>',
           'attributes' => [
               'wire:model' => 'amount.'.$value,
               'step' => .01,

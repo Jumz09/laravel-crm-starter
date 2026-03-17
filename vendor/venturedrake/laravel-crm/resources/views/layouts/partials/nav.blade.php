@@ -10,7 +10,7 @@
             @endhasleadsenabled
             @hasdealsenabled
                 @can('view crm deals')
-                <li class="nav-item"><a class="nav-link {{ (strpos(Route::currentRouteName(), 'laravel-crm.deals') === 0) ? 'active' : '' }}" href="{{ url(route('laravel-crm.deals.index')) }}"><i class="fa-solid fa-k"></i> {{ ucfirst(__('laravel-crm::lang.deals')) }}</a></li>
+                <li class="nav-item"><a class="nav-link {{ (strpos(Route::currentRouteName(), 'laravel-crm.deals') === 0) ? 'active' : '' }}" href="{{ url(route('laravel-crm.deals.index')) }}"><i class="fa fa-money"></i> {{ ucfirst(__('laravel-crm::lang.deals')) }}</a></li>
                 @endcan
             @endhasdealsenabled
             @hasquotesenabled
